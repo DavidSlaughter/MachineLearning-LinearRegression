@@ -215,7 +215,7 @@ class MLModel:
 
     def predict(self, x):
         """
-        Allows the modeo to predict y labels for given x feature input. Predictions should improve after training.
+        Allows the model to predict y labels for given x feature input. Predictions should improve after training.
         """
         self.model.eval()
         x_tensor = torch.as_tensor(x).float()
